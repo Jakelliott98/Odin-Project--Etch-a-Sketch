@@ -1,6 +1,5 @@
 const gridContainer = document.getElementById('container');
 const resetButton = document.getElementById('resetButton');
-let number = 0;
 
 function createGrid(number){
     for (let i = 0; i < number; i++){
@@ -10,7 +9,7 @@ function createGrid(number){
         item.addEventListener('mouseover', () => {
             item.style.backgroundColor = randomColor();
         })
-    }
+    };
 };
 
 function randomColor(){
@@ -22,8 +21,10 @@ function randomColor(){
 
 
 resetButton.addEventListener('click', () => {
-    number = prompt('Give me a number!');
-    console.log(number);
+    gridContainer.textContent = '';
+    let number = prompt('Give me a number!');
+    let rowNumber = number * number;
+    createGrid(rowNumber);
 });
 
-createGrid(number);
+
