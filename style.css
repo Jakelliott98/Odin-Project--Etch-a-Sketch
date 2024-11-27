@@ -10,15 +10,25 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: #EBEBEB;
 }
 
 button {
     margin-top: 2vh;
-    padding: 20px;
+    padding: 20px 40px;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #EDF67D;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #container {
-    background-color: red;
+    background-color: #F5F5F5;
     display: flex;
     flex-flow: row wrap;
     width: 650px;
@@ -26,12 +36,3 @@ button {
     flex-wrap: wrap;
 }
 
-.item {
-    flex: 1 1 auto;
-    min-height: 50px;
-    min-width: 50px;
-}
-
-.item:hover {
-    background-color: ;
-}
